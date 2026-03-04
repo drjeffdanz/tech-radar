@@ -1,7 +1,7 @@
 {
-  "version": "2025-Q1",
+  "version": "2026-Q1",
   "title": "Technology Radar",
-  "updated": "2025-03-01",
+  "updated": "2026-03-04",
   "entries": [
     {
       "id": "typescript",
@@ -9,7 +9,7 @@
       "ring": "Adopt",
       "quadrant": "Languages & Frameworks",
       "status": "no-change",
-      "description": "Strongly typed superset of JavaScript. Default choice for all new projects.",
+      "description": "Strongly typed superset of JavaScript. Default choice for all new projects. #1 language on GitHub by contributor count as of 2025.",
       "since": "2022-Q3"
     },
     {
@@ -18,7 +18,7 @@
       "ring": "Adopt",
       "quadrant": "Languages & Frameworks",
       "status": "no-change",
-      "description": "Preferred UI library. React 19 with Server Components for new work.",
+      "description": "Preferred UI library. React 19 with Server Components and the App Router is the default for all new work.",
       "since": "2021-Q1"
     },
     {
@@ -26,8 +26,8 @@
       "label": "Next.js",
       "ring": "Adopt",
       "quadrant": "Languages & Frameworks",
-      "status": "moved-in",
-      "description": "Full-stack React framework. App Router is now the default.",
+      "status": "no-change",
+      "description": "Full-stack React framework. App Router is the current standard; Pages Router is now legacy.",
       "since": "2023-Q2"
     },
     {
@@ -36,7 +36,7 @@
       "ring": "Adopt",
       "quadrant": "Languages & Frameworks",
       "status": "no-change",
-      "description": "Go-to language for AI/ML scripting and data pipelines.",
+      "description": "Go-to language for AI/ML scripting, agent backends, and data pipelines.",
       "since": "2020-Q1"
     },
     {
@@ -45,17 +45,47 @@
       "ring": "Adopt",
       "quadrant": "Languages & Frameworks",
       "status": "no-change",
-      "description": "Utility-first CSS framework. Tailwind v4 with CSS-first config.",
+      "description": "Utility-first CSS framework. Tailwind v4 with CSS-first config adopted across all projects.",
       "since": "2022-Q1"
+    },
+    {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "ring": "Adopt",
+      "quadrant": "Languages & Frameworks",
+      "status": "new",
+      "description": "De facto standard for Python API services. Native async, automatic OpenAPI generation, and ideal for AI/agent backends. Stack Overflow 2025 showed the largest single-year adoption gain of any Python framework.",
+      "since": "2025-Q1",
+      "tags": ["python", "api", "ai"]
     },
     {
       "id": "rust",
       "label": "Rust",
       "ring": "Trial",
       "quadrant": "Languages & Frameworks",
-      "status": "new",
+      "status": "no-change",
       "description": "Evaluating for systems-level WebAssembly targets and performance-critical tooling.",
       "since": "2024-Q4"
+    },
+    {
+      "id": "astro",
+      "label": "Astro",
+      "ring": "Trial",
+      "quadrant": "Languages & Frameworks",
+      "status": "new",
+      "description": "Islands architecture for content-heavy sites. Achieved highest Lighthouse performance scores in 2025 benchmarks. Strong alternative to Next.js for marketing and documentation sites.",
+      "since": "2025-Q2",
+      "tags": ["frontend", "performance"]
+    },
+    {
+      "id": "svelte",
+      "label": "Svelte 5 / SvelteKit",
+      "ring": "Trial",
+      "quadrant": "Languages & Frameworks",
+      "status": "new",
+      "description": "Compile-time reactivity with the Svelte 5 runes system. 180% growth in 2025. No runtime overhead. Evaluating for projects where bundle size and performance are critical.",
+      "since": "2025-Q1",
+      "tags": ["frontend"]
     },
     {
       "id": "graphql",
@@ -65,6 +95,15 @@
       "status": "no-change",
       "description": "Considered on a per-project basis when flexible querying is needed.",
       "since": "2023-Q1"
+    },
+    {
+      "id": "pages-router",
+      "label": "Next.js Pages Router",
+      "ring": "Hold",
+      "quadrant": "Languages & Frameworks",
+      "status": "moved-out",
+      "description": "The App Router is the current standard. New projects must not use the Pages Router — it accumulates architectural debt that compounds. Existing projects should plan migration.",
+      "since": "2025-Q4"
     },
     {
       "id": "aws",
@@ -81,7 +120,7 @@
       "ring": "Adopt",
       "quadrant": "Platforms",
       "status": "no-change",
-      "description": "Standard container runtime for all service packaging.",
+      "description": "Standard container runtime for all service packaging and deployment.",
       "since": "2019-Q1"
     },
     {
@@ -98,7 +137,7 @@
       "label": "GitHub Actions",
       "ring": "Adopt",
       "quadrant": "Platforms",
-      "status": "moved-in",
+      "status": "no-change",
       "description": "CI/CD of choice for open source and personal projects.",
       "since": "2023-Q3"
     },
@@ -112,6 +151,55 @@
       "since": "2023-Q1"
     },
     {
+      "id": "mcp",
+      "label": "Model Context Protocol",
+      "ring": "Adopt",
+      "quadrant": "Platforms",
+      "status": "new",
+      "description": "Anthropic's open standard for connecting AI agents to tools and data sources. ThoughtWorks Vol.33 called it the dominant theme of 2025. 97M+ monthly SDK downloads. Adopted by OpenAI, Google, Microsoft. Donated to Linux Foundation.",
+      "since": "2025-Q1",
+      "tags": ["ai", "agents", "protocol"]
+    },
+    {
+      "id": "clickhouse",
+      "label": "ClickHouse",
+      "ring": "Adopt",
+      "quadrant": "Platforms",
+      "status": "new",
+      "description": "Open-source columnar OLAP database with incremental materialized views. ThoughtWorks Vol.33 Adopt ring. Preferred for real-time developer-facing analytics over legacy data warehouse stacks.",
+      "since": "2025-Q2",
+      "tags": ["database", "analytics"]
+    },
+    {
+      "id": "arm-cloud",
+      "label": "Arm Cloud Compute",
+      "ring": "Adopt",
+      "quadrant": "Platforms",
+      "status": "new",
+      "description": "AWS Graviton, Azure Cobalt, GCP Axion. ThoughtWorks Vol.33 Adopt for cost and energy efficiency. Default choice for new CI/CD and containerized workloads to reduce cloud spend.",
+      "since": "2025-Q1",
+      "tags": ["cloud", "infrastructure", "cost"]
+    },
+    {
+      "id": "edge-computing",
+      "label": "Edge Computing",
+      "ring": "Adopt",
+      "quadrant": "Platforms",
+      "status": "moved-in",
+      "description": "Cloudflare Workers, Durable Objects, and AWS Lambda@Edge are now mainstream. The three-tier hybrid architecture (cloud + on-premises + edge) is the standard for AI and latency-sensitive workloads.",
+      "since": "2024-Q3"
+    },
+    {
+      "id": "vector-databases",
+      "label": "Vector Databases",
+      "ring": "Trial",
+      "quadrant": "Platforms",
+      "status": "new",
+      "description": "Critical infrastructure for agent memory and RAG retrieval. Evaluating pgvector (Postgres-native), Qdrant, and Pinecone. Bain identifies vector stores as foundational for all agentic AI architectures.",
+      "since": "2025-Q1",
+      "tags": ["ai", "database", "agents"]
+    },
+    {
       "id": "azure",
       "label": "Azure",
       "ring": "Trial",
@@ -121,31 +209,32 @@
       "since": "2021-Q2"
     },
     {
-      "id": "edge-computing",
-      "label": "Edge Computing",
+      "id": "deno",
+      "label": "Deno 2",
       "ring": "Trial",
       "quadrant": "Platforms",
       "status": "new",
-      "description": "Cloudflare Workers and AWS Lambda@Edge for latency-sensitive workloads.",
-      "since": "2024-Q3"
-    },
-    {
-      "id": "blockchain",
-      "label": "Blockchain",
-      "ring": "Assess",
-      "quadrant": "Platforms",
-      "status": "no-change",
-      "description": "Enterprise ledger use cases proven at Lockheed Martin. New public-chain work is selective.",
-      "since": "2020-Q1"
+      "description": "Node.js-compatible runtime with full npm support, built-in TypeScript, and secure-by-default permissions. Deno 2 removed the last major adoption blockers. Evaluating for new server-side TypeScript services.",
+      "since": "2025-Q1",
+      "tags": ["runtime", "typescript"]
     },
     {
       "id": "quantum",
       "label": "Quantum Computing",
       "ring": "Assess",
       "quadrant": "Platforms",
-      "status": "new",
-      "description": "Monitoring IBM Q and AWS Braket for cryptography and optimization use cases.",
+      "status": "no-change",
+      "description": "Monitoring IBM Q, AWS Braket, and Google Willow. Near-term priority is post-quantum cryptography migration — NIST 2024 standards (lattice-based algorithms) are finalized. General business applications remain 5-10 years out.",
       "since": "2024-Q1"
+    },
+    {
+      "id": "blockchain",
+      "label": "Blockchain",
+      "ring": "Hold",
+      "quadrant": "Platforms",
+      "status": "moved-out",
+      "description": "Enterprise ledger use cases proven at Lockheed Martin. All major 2025-2026 consulting firm reports (Deloitte, McKinsey, Accenture, Bain) have deprioritized new enterprise blockchain investments — use cases remain narrow and alternatives have matured.",
+      "since": "2020-Q1"
     },
     {
       "id": "vite",
@@ -161,7 +250,7 @@
       "label": "Vitest",
       "ring": "Adopt",
       "quadrant": "Tools",
-      "status": "moved-in",
+      "status": "no-change",
       "description": "Fast unit test runner that pairs naturally with Vite.",
       "since": "2023-Q4"
     },
@@ -175,12 +264,31 @@
       "since": "2023-Q1"
     },
     {
-      "id": "cursor",
-      "label": "Cursor",
-      "ring": "Trial",
+      "id": "claude-code",
+      "label": "Claude Code",
+      "ring": "Adopt",
+      "quadrant": "Tools",
+      "status": "no-change",
+      "description": "Agentic AI coding assistant. Integrated into daily engineering workflow.",
+      "since": "2025-Q1"
+    },
+    {
+      "id": "opentelemetry",
+      "label": "OpenTelemetry",
+      "ring": "Adopt",
       "quadrant": "Tools",
       "status": "new",
-      "description": "AI-native code editor evaluated alongside VS Code.",
+      "description": "De facto standard for vendor-neutral observability instrumentation. CNCF graduated project. Decouples telemetry generation from analysis backends (Datadog, Grafana, Honeycomb). Required in all new service builds.",
+      "since": "2025-Q1",
+      "tags": ["observability", "monitoring"]
+    },
+    {
+      "id": "cursor",
+      "label": "Cursor",
+      "ring": "Adopt",
+      "quadrant": "Tools",
+      "status": "moved-in",
+      "description": "AI-native code editor with deep codebase context awareness and multi-file refactoring. ThoughtWorks Vol.32 Trial, now firmly Adopt. Primary development environment for complex, multi-file work.",
       "since": "2024-Q4"
     },
     {
@@ -193,6 +301,26 @@
       "since": "2022-Q3"
     },
     {
+      "id": "langfuse",
+      "label": "Langfuse",
+      "ring": "Trial",
+      "quadrant": "Tools",
+      "status": "new",
+      "description": "Open-source LLM observability platform. Tracing, prompt versioning, evaluation, and playground. Self-hostable, OpenTelemetry-compatible alternative to LangSmith. 19K+ GitHub stars.",
+      "since": "2025-Q2",
+      "tags": ["llmops", "observability", "ai"]
+    },
+    {
+      "id": "windsurf",
+      "label": "Windsurf",
+      "ring": "Trial",
+      "quadrant": "Tools",
+      "status": "new",
+      "description": "Agentic AI IDE with the Cascade engine. Evaluating alongside Cursor for autonomous multi-step coding tasks. ThoughtWorks Vol.32 Trial.",
+      "since": "2025-Q1",
+      "tags": ["ai", "ide"]
+    },
+    {
       "id": "storybook",
       "label": "Storybook",
       "ring": "Assess",
@@ -202,20 +330,11 @@
       "since": "2023-Q2"
     },
     {
-      "id": "claude-code",
-      "label": "Claude Code",
-      "ring": "Adopt",
-      "quadrant": "Tools",
-      "status": "new",
-      "description": "Agentic AI coding assistant. Integrated into daily engineering workflow.",
-      "since": "2025-Q1"
-    },
-    {
       "id": "gen-ai-assistants",
       "label": "Generative AI Assistants",
       "ring": "Adopt",
       "quadrant": "Techniques",
-      "status": "moved-in",
+      "status": "no-change",
       "description": "Claude, GPT-4o, and Gemini integrated into daily engineering workflows.",
       "since": "2023-Q2"
     },
@@ -224,7 +343,7 @@
       "label": "RAG Pipelines",
       "ring": "Adopt",
       "quadrant": "Techniques",
-      "status": "moved-in",
+      "status": "no-change",
       "description": "Retrieval-Augmented Generation is the standard architecture for knowledge-grounded LLM apps.",
       "since": "2024-Q1"
     },
@@ -234,7 +353,7 @@
       "ring": "Adopt",
       "quadrant": "Techniques",
       "status": "no-change",
-      "description": "Perimeter-less security model applied across all infrastructure design.",
+      "description": "Perimeter-less security model applied across all infrastructure design. Cross-firm consulting consensus as baseline requirement for 2025-2026.",
       "since": "2021-Q1"
     },
     {
@@ -243,7 +362,7 @@
       "ring": "Adopt",
       "quadrant": "Techniques",
       "status": "no-change",
-      "description": "STRIDE-based modeling baked into sprint ceremonies.",
+      "description": "STRIDE-based modeling baked into sprint ceremonies. Now extended to cover AI agent threat surfaces.",
       "since": "2020-Q1"
     },
     {
@@ -254,6 +373,55 @@
       "status": "no-change",
       "description": "Short-lived branches with frequent integration to main.",
       "since": "2021-Q3"
+    },
+    {
+      "id": "context-engineering",
+      "label": "Context Engineering",
+      "ring": "Trial",
+      "quadrant": "Techniques",
+      "status": "new",
+      "description": "Systematic management of what an AI agent knows at each step in a workflow. Covers RAG, memory strategies, tool selection, and session state design. ThoughtWorks Vol.33 identifies this as the 2025 successor to prompt engineering.",
+      "since": "2025-Q2",
+      "tags": ["ai", "agents"]
+    },
+    {
+      "id": "ai-agents",
+      "label": "Agentic AI Workflows",
+      "ring": "Trial",
+      "quadrant": "Techniques",
+      "status": "moved-in",
+      "description": "Multi-step autonomous agent pipelines with tool-use. Frameworks: LangGraph, Claude Agent SDK, OpenAI Agents SDK. MCP is the integration protocol. All major consulting firms cite this as the #1 enterprise technology investment for 2025-2026. Only 11% of orgs have it in production.",
+      "since": "2024-Q3"
+    },
+    {
+      "id": "slm",
+      "label": "Small Language Models",
+      "ring": "Trial",
+      "quadrant": "Techniques",
+      "status": "new",
+      "description": "Task-specific SLMs preferred over large general-purpose models for agent subtasks. Deloitte and Bain recommend microservices-style agent architecture: one SLM per discrete function, orchestrated by a manager agent.",
+      "since": "2025-Q2",
+      "tags": ["ai", "llm", "agents"]
+    },
+    {
+      "id": "supply-chain-security",
+      "label": "Supply Chain Security",
+      "ring": "Trial",
+      "quadrant": "Techniques",
+      "status": "new",
+      "description": "SLSA attestation and SBOM (SPDX/CycloneDX formats) moving from compliance checkbox to active engineering practice. CISA mandate updates and increasing open-source dependency attacks are driving urgency in 2025.",
+      "since": "2025-Q1",
+      "tags": ["security", "devops"]
+    },
+    {
+      "id": "post-quantum-crypto",
+      "label": "Post-Quantum Cryptography",
+      "ring": "Trial",
+      "quadrant": "Techniques",
+      "status": "new",
+      "description": "NIST August 2024 PQC standards (lattice-based CRYSTALS-Kyber and hash-based SPHINCS+) are finalized. Deloitte, McKinsey, and Bain all recommend beginning migration roadmap now. Apple, Google, and Microsoft are already integrating. Build cryptographic agility into all new systems.",
+      "since": "2025-Q1",
+      "tags": ["security", "cryptography"]
     },
     {
       "id": "micro-frontends",
@@ -269,18 +437,49 @@
       "label": "Design Tokens",
       "ring": "Trial",
       "quadrant": "Techniques",
-      "status": "new",
+      "status": "no-change",
       "description": "CSS custom properties as the single source of truth for design systems.",
       "since": "2024-Q2"
     },
     {
-      "id": "ai-agents",
-      "label": "AI Agents",
+      "id": "wasm",
+      "label": "WebAssembly / WASI",
       "ring": "Assess",
       "quadrant": "Techniques",
       "status": "new",
-      "description": "Agentic workflows with tool-use. Promising but engineering discipline still maturing.",
-      "since": "2024-Q3"
+      "description": "WASI 0.2 and the Component Model shipped with async support. Sub-millisecond cold starts, kilobyte-sized binaries. Cloudflare and Fastly process billions of requests via Wasm. A genuine container alternative for edge and serverless specialists.",
+      "since": "2025-Q1",
+      "tags": ["performance", "edge"]
+    },
+    {
+      "id": "digital-twins",
+      "label": "Digital Twins",
+      "ring": "Assess",
+      "quadrant": "Techniques",
+      "status": "new",
+      "description": "Virtual replicas of physical systems for simulation and operational optimization. Accenture, McKinsey, and Bain all highlight supply chain and infrastructure applications. Evaluating for IoT and enterprise asset management use cases.",
+      "since": "2025-Q2",
+      "tags": ["iot", "simulation"]
+    },
+    {
+      "id": "physical-ai",
+      "label": "Physical AI / Humanoid Robots",
+      "ring": "Assess",
+      "quadrant": "Techniques",
+      "status": "new",
+      "description": "Foundation models embedded in robots for generalist physical capabilities. ~$2.5B VC investment in 2024. All four major consulting firms tracking (Deloitte, McKinsey, Accenture, Bain). 2-5 years from meaningful scaled deployment — monitor now.",
+      "since": "2025-Q3",
+      "tags": ["robotics", "ai"]
+    },
+    {
+      "id": "ungoverned-agents",
+      "label": "Ungoverned AI Agents",
+      "ring": "Hold",
+      "quadrant": "Techniques",
+      "status": "new",
+      "description": "Deploying autonomous agents without behavioral observability, rate limiting, and access controls is high risk. Prompt injection, cross-tool data exfiltration, and privilege escalation are active attack vectors. Apply API-level security rigor to every agent tool and MCP server endpoint.",
+      "since": "2025-Q3",
+      "tags": ["security", "ai"]
     }
   ]
 }
